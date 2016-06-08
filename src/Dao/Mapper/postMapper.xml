@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Dao.IPostDao">
+	<select id="selectPostByIndex" parameterType="post" resultType="post">
+		SELECT * FROM post WHERE tindex = #{tindex} ORDER
+		BY writetime DESC
+	</select>
+	<select id="selectPostByContent" parameterType="post"
+		resultType="post">
+		SELECT * FROM post WHERE content LIKE #{content} AND email
+		LIKE #{email} ORDER BY writetime ASC
+	</select>
+	<insert id="insertPost" parameterType="post">
+		INSERT INTO post VALUES (#{tindex}, default, #{email}, #{content})
+	</insert>
+	<delete id="deletePost" parameterType="post">
+		Delete FROM post WHERE
+		tindex = #{tindex} AND email = #{email}
+		<if test="writetime != null"> AND writetime = #{writetime}</if>
+	</delete>
+</mapper>

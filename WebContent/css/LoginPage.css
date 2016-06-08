@@ -1,0 +1,183 @@
+@CHARSET "UTF-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+
+@import
+	url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:900&effect=3d|3d-float|anaglyph|brick-sign|canvas-print|crackle|decaying|destruction|distressed|distressed-wood|emboss|fire|fire-animation|fragile|grass|ice|mitosis|neon|outline|putting-green|scuffed-steel|shadow-multiple|splintered|static|stonewash|vintage|wallpaper)
+	;
+
+body {
+	overflow: hidden;
+	background-color:#E7E7E7;
+}
+
+.wrapper {
+	position: relative;
+	float: center;
+}
+
+.effects-table td:first-child {
+	font-family: 'Nanum Pen Script', sans-serif;
+	font-size: 60px;
+	font-weight: 900;
+	line-height: 56px;
+}
+
+.info-table {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	margin-top: 3%;
+	width: 100%;
+}
+
+.info-table tr {
+	height: 50px;
+}
+
+.info-table tr:last-child {
+	height: 150px;
+}
+
+.info-table td:first-child {
+	font-family: 'Nanum Pen Script', sans-serif;
+	font-size: 30px;
+	font-weight: 900;
+	color: white;
+	text-align: right;
+	text-shadow: 0 1px 1px #000, 0 -1px 1px #000, 1px 0 1px #000, -1px 0 1px
+		#000;
+}
+
+input[type="text"] {
+	display: block;
+	margin: 0;
+	width: 100%;
+	font-family: 'Nanum Pen Script', sans-serif;
+	font-size: 30px;
+	appearance: none;
+	box-shadow: none;
+	border-radius: none;
+	height: 30px;
+	width: 250px;
+}
+
+input[type="password"] {
+	display: block;
+	margin: 0;
+	width: 100%;
+	font-family: 'Nanum Pen Script', sans-serif;
+	font-size: 30px;
+	appearance: none;
+	box-shadow: none;
+	border-radius: none;
+	height: 30px;
+	width: 250px;
+}
+
+input[type="submit"] {
+	border-radius: 10px;
+	padding: 0;
+	background: white;
+	margin: 0;
+	width: 30%;
+	font-family: 'Nanum Pen Script', sans-serif;
+	font-size: 30px;
+	font-weight: 800;
+	color: chocolate;
+	opacity: 0.8;
+	background: white;
+	position: relative;
+	float: center;
+	cursor: hand;
+	cursor: pointer;
+}
+
+input[type="reset"] {
+	border-radius: 10px;
+	padding: 0;
+	background: white;
+	margin: 0;
+	width: 30%;
+	font-family: 'Nanum Pen Script', sans-serif;
+	font-size: 30px;
+	font-weight: 800;
+	color: chocolate;
+	opacity: 0.8;
+	position: relative;
+	float: center;
+	cursor: hand;
+	cursor: pointer;
+}
+
+input[type="button"] {
+	border-radius: 10px;
+	padding: 0;
+	background: white;
+	margin: 0;
+	width: 30%;
+	font-family: 'Nanum Pen Script', sans-serif;
+	font-size: 30px;
+	font-weight: 800;
+	color: chocolate;
+	opacity: 0.8;
+	position: relative;
+	float: center;
+	cursor: hand;
+	cursor: pointer;
+}
+
+input[type="text"]:focus {
+	outline: none;
+}
+
+input[type="password"]:focus {
+	outline: none;
+}
+
+#vh {
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.box {
+	border-radius: 15px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+	padding: 25px;
+	width: 30%;
+	height: 30%;
+	background-image:
+		url('http://www.lostsurfboards.net/wp-content/uploads/2015/06/corkBoardWP-1.jpg');
+	background-position: center top;
+	background-size: cover;
+}
+
+table {
+	margin: auto;
+}
+
+image {
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+	display: block;
+}
+
+footer2 {
+	background-color: #FFF;
+	padding: 15px;
+	position: absolute;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 15px;
+	bottom: 0px;
+	left: 0px;
+	height : 20px;
+	width: 100%;
+	text-align: center;
+}

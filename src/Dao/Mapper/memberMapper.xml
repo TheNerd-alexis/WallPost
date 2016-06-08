@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Dao.IMemberDao">
+	<select id="selectMember" parameterType="member" resultType="member">
+		SELECT
+		* FROM member WHERE name LIKE #{name} AND password LIKE
+		#{password} AND email LIKE #{email}
+	</select>
+	<insert id="insertMember" parameterType="member">
+		INSERT INTO member(name,
+		password, email) VALUES (#{name}, #{password}, #{email})
+	</insert>
+	<update id="updateMember" parameterType="hashmap">
+		UPDATE member SET name =
+		#{member.name}, password = #{member.password}, email = #{member.email}
+		WHERE email = #{orgMember.email}
+	</update>
+	<delete id="deleteMember" parameterType="member">
+		Delete FROM member WHERE
+		email LIKE #{email}
+	</delete>
+</mapper>
